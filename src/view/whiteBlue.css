@@ -1,0 +1,211 @@
+.root{
+	-fx-accent: #e7e7e7;
+	-fx-focus-color: #e7e7e7;
+}
+.background {
+    -fx-background-color: #ffffff;
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: Futura;
+    -fx-background-radius:0px;
+  	-fx-border-color:#30d5ff;
+  	-fx-background-color:transparent ;
+    /*-fx-text-fill: white; */
+	-fx-text-fill: #30d5ff; 
+   	/*-fx-opacity: 0.6;*/
+   	-fx-border-width: 0 0 2 0 ;
+}
+.choiceBox{
+	-fx-font-family: Futura;
+	-fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-alignment: CENTER;
+    -fx-background-radius:0px;
+  	-fx-border-color:#30d5ff;
+    -fx-border-width: 0 0 2 0 ;
+}
+
+
+.label {
+    -fx-font-size: 12pt;
+    -fx-font-family: Futura, "Heltivica";
+    -fx-text-fill: #30d5ff;
+    /*-fx-opacity: 0.6;*/
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: Futura, "Heltivica Neue";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 10pt;
+    -fx-font-family: Futura, Heltivica;
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.table-view {
+    -fx-base: #ffffff;
+    -fx-font-family: Futura;
+    -fx-text-fill: #30d5ff;
+    -fx-control-inner-background: #ffffff;
+    -fx-background-color: #ffffff;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-font-family: Futura;
+    -fx-background-color: transparent;
+}
+
+ .table-view .column-header, .table-view .filler {
+    -fx-size: 15pt;
+    -fx-text-fill: #30d5ff;
+    -fx-font-family: Futura; 
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+} /* the view of table header- content meaning example */
+
+
+.table-view .column-header .label {
+    -fx-font-size: 20pt;/* The header of the table view, Dictionary Word, Meaning, Example*/
+    -fx-font-family: Futura;
+    -fx-text-fill: #30d5ff;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+.table-cell {
+	-fx-font-family: Futura;
+    -fx-text-fill: #05a6cf;
+    -fx-alignment: center;
+}
+
+.list-cell {
+	-fx-font-family: Futura;
+    -fx-text-fill: #05a6cf;
+    -fx-alignment: center;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-font-family: Futura;
+    -fx-text-fill: #30d5ff;
+    /*-fx-focus-color: #e7e7e7;*/
+    -fx-background-color: -fx-focus-color;
+    /*-fx-background-color: #e7e7e7*/
+}
+/* 
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent;
+    -fx-base: transparent;
+    -fx-background-insets:0;
+    -fx-background-color: transparent;
+}
+*/
+
+.split-pane:vertical>.split-pane-divider {
+    -fx-border-color: #30d5ff;
+    -fx-border-width: 0 0 2 0 ;
+    -fx-background-insets:0;
+    -fx-background-color: transparent;
+}
+.split-pane {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-background-insets: 2, 0 0 0 0;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#ffffff,20%);
+}
+
+.context-menu {
+    -fx-background-color: derive(#ffffff,50%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: Futura;
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu .left-container {
+    -fx-background-color: black;
+}
+
+
+.list-view {
+    -fx-base: #ffffff;
+    -fx-font-family: Futura, "Segoe UI Light";
+    -fx-text-alignment: center;
+    -fx-text-fill: #30d5ff;
+    -fx-control-inner-background: #ffffff;
+    -fx-background-color: #ffffff;
+    -fx-padding: 5;
+}
+
+
+/* 
+ * Metro style Push Button
+ * 
+ */
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: black;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #ffffff;
+    -fx-font-family: Impact,Futura;/* "Avenir Next Condesend Regular" Helvetica, Arial, sans-serif;*/
+    -fx-font-size: 13pt;
+    -fx-text-fill: #30d5ff; 
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: transparent;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: transparent;
+  -fx-text-fill: #3FAFDF;
+}
+
+.button:focused {
+    -fx-border-color: transparent, transparent;
+    -fx-underline: true;
+    -fx-border-width: 0, 0;
+    -fx-border-radius: 0, 0;
+    -fx-font-weight: bold;
+
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: transparent;
+    -fx-text-fill: #30d5ff;
+}
+
+.button:default {
+    /*button on hover*/
+    -fx-background-color: transparent;
+    -fx-text-fill: #30d5ff;
+}
+
+.button:default:hover {
+    fx-background-color: transparent;
+    -fx-font-weight: bold;
+    
+}

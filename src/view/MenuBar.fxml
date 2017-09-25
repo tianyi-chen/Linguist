@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox spacing="60.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="dictionaryButton" layoutX="71.0" layoutY="67.0" mnemonicParsing="false" styleClass="background" text="Dictionary" />
+      <Button fx:id="drillButton" layoutX="159.0" layoutY="67.0" mnemonicParsing="false" text="Drill" />
+      <Button fx:id="gameButton" layoutX="270.0" layoutY="67.0" mnemonicParsing="false" text="Game" />
+      <Button fx:id="reviewButton" layoutX="473.0" layoutY="67.0" mnemonicParsing="false" text="Review" />
+      <Button fx:id="meButton" layoutX="667.0" layoutY="67.0" mnemonicParsing="false" onAction="#onClickMe" text="ME" />
+   </children>
+</HBox>

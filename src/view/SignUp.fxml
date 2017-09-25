@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="750.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpController">
+   <children>
+      <Label layoutX="148.0" layoutY="110.0" text="email" />
+      <Label layoutX="148.0" layoutY="174.0" text="username" />
+      <Label layoutX="148.0" layoutY="235.0" text="password" />
+      <Label layoutX="148.0" layoutY="299.0" text="confirm password" />
+      <Label fx:id="signUpLabel" layoutX="151.0" layoutY="336.0" />
+      <Label fx:id="usernameRequireLabel" layoutX="558.0" layoutY="174.0" />
+      <Label fx:id="passwordRequireLabel" layoutX="558.0" layoutY="235.0" />
+      <TextField fx:id="emailField" layoutX="323.0" layoutY="93.0" />
+      <TextField fx:id="usernameText" layoutX="323.0" layoutY="159.0" />
+      <PasswordField fx:id="passwordField" layoutX="323.0" layoutY="226.0" />
+      <PasswordField fx:id="passwordconfirmField" layoutX="323.0" layoutY="285.0" onKeyPressed="#buttonPressed" />
+      <Button fx:id="backButton" layoutX="159.0" layoutY="400.0" mnemonicParsing="false" onAction="#onClickBack" text="Back" />
+      <Button fx:id="confirmButton" layoutX="547.0" layoutY="400.0" mnemonicParsing="false" onAction="#onConfirm" text="Confirm" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReviewController">
+   <children>
+      <TableView fx:id="reviewTable" prefHeight="450.0" prefWidth="626.0" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="contentColumn" prefWidth="150.0" text="Word" />
+            <TableColumn fx:id="classColumn" prefWidth="45.0" />
+            <TableColumn fx:id="meaningColumn" prefWidth="255.0" text="Meaning" />
+            <TableColumn fx:id="proficiencyColumn" prefWidth="155.0" text="Proficiency" />
+         </columns>
+      </TableView>
+      <ListView fx:id="dictionaryNameListView" layoutX="617.0" layoutY="14.0" prefHeight="360.0" prefWidth="169.0" styleClass="background" />
+   </children>
+</AnchorPane>

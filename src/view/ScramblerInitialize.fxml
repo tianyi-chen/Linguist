@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ScramblerInitialiseController">
+   <children>
+      <AnchorPane layoutX="-38.0" layoutY="-12.0" prefHeight="450.0" prefWidth="800.0" styleClass="background" stylesheets="@application.css">
+         <children>
+            <Button fx:id="startButton" layoutX="361.0" layoutY="327.0" mnemonicParsing="false" onAction="#onClickStart" text="Start" />
+            <ChoiceBox fx:id="choiceBox" layoutX="367.0" layoutY="131.0" prefHeight="36.0" prefWidth="224.0" styleClass="choiceBox" />
+            <Label fx:id="fromLabel" layoutX="243.0" layoutY="149.0" text="Language:" />
+            <Label fx:id="dictionaryRequiredLabel" layoutX="331.0" layoutY="160.0" prefHeight="22.0" prefWidth="138.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
